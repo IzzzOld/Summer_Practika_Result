@@ -1,0 +1,177 @@
+.basket-container {
+  font-family: Arial;
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.basket-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.car-list {
+  margin: 20px 0;
+}
+
+.car-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.car-model {
+  flex: 1;
+  font-size: 23px;
+}
+
+.car-price {
+  flex: 1;
+  text-align: center;
+  font-size: 23px;
+}
+
+.car-quantity {
+  flex: 1;
+  text-align: center;
+  font-size: 23px;
+}
+
+.button {
+  margin: 0 10px;
+  background-color: #923434;
+  color: white;
+  padding: 5px 10px;
+}
+
+.car-image {
+  flex: 1;
+  text-align: right;
+}
+
+.car-image img {
+  width: 250px;
+}
+
+.total-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-text {
+  flex: 1;
+  font-size: 25px;
+}
+
+.pay-button {
+  background-color: #923434;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .basket-container {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  .car-item {
+    flex-direction: row; /* Расположение в строку */
+    gap: 15px;
+    align-items: center;
+  }
+
+  .car-image {
+    flex: 0 0 150px;
+    text-align: center;
+  }
+
+  .car-image img {
+    width: 150px;
+  }
+
+  .car-model,
+  .car-price,
+  .car-quantity {
+    flex: 1;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+
+  .total-section {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .total-text {
+    font-size: 22px;
+    flex: 1;
+    text-align: left;
+  }
+
+  .pay-button {
+    padding: 10px 50px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .car-image {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .car-model,
+  .car-price,
+  .car-quantity {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .button {
+    order: 3;
+    margin: 5px 0;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .total-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .total-text {
+    order: 1;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pay-button {
+    order: 2;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+}

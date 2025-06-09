@@ -1,0 +1,67 @@
+.model-range-container {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #F5F5F5;
+}
+
+.car-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.car-card h2 {
+    color: #000000;
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.car-image {
+  width: 100%;
+  max-width: 900px; /* Максимальная ширина картинки */
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  margin-left: 20px;
+  font-size: 23px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .model-range-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .car-card {
+        margin-bottom: 10px;
+    }
+
+    .car-content {
+        padding: 14px;
+    }
+
+    .car-card h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .car-image {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}

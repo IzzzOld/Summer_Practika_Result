@@ -1,0 +1,50 @@
+.footer {
+  background-color: #d3d3d3;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Расположение элементов по краям */
+}
+
+.footer-left {
+  text-align: left; /* Текст слева прижимается к левому краю */
+  color: #000000;
+}
+
+.footer-right {
+  text-align: right; /* Текст справа прижимается к правому краю */
+  color: #000000;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: left;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    width: 100%;
+  }
+}

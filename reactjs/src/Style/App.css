@@ -1,0 +1,75 @@
+.background-audi {
+  width: 100%;
+  background-image: url('../img/Audi.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProjectCars {
+  text-align: center;
+}
+
+.ProjectCars .nav-link {
+  color: #923434;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Menu {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.Menu .nav-link {
+  color: #923434;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .Menu {
+    gap: 100px;
+    justify-content: center;
+  }
+
+  .ProjectCars .nav-link {
+    font-size: 50px;
+  }
+
+  .Menu .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ProjectCars .nav-link {
+    font-size: 28px;
+  }
+
+  .Menu .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectCars .nav-link {
+    font-size: 24px;
+  }
+
+  .Menu .nav-link {
+    font-size: 12px;
+  }
+}
